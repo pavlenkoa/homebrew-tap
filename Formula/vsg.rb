@@ -11,7 +11,7 @@ class Vsg < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_darwin_amd64.tar.gz"
-      sha256 "f7a4ff4605ee787a76ac31801256cfccdf0d6b4471b168539b34413bb7cea42f"
+      sha256 "73cd09154ab0e780c082c1689ab3a651e7624b06ab6970df42d155176601a1e6"
 
       def install
         bin.install "vsg"
@@ -19,7 +19,7 @@ class Vsg < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_darwin_arm64.tar.gz"
-      sha256 "491a5654f636f49e7c7a31c4bcb2c6f270fbbfa41c63973639b500c36b255d01"
+      sha256 "e4fb4b5832b0fdb79861dae38229f8496c430501a586ede74fbcddc4bb2b366f"
 
       def install
         bin.install "vsg"
@@ -30,14 +30,14 @@ class Vsg < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_linux_amd64.tar.gz"
-      sha256 "b2977855347912ed7f01e8443bf1c01c2dc6d40135cb590dd92a605c2434d3dc"
+      sha256 "32ed3049c4fae44397c76c9eba729e05c93e4e6d415ba6ce5d44995e6ea94fbd"
       def install
         bin.install "vsg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_linux_arm64.tar.gz"
-      sha256 "98a9a1167a83474ccd3bea26e958eaa2a3129c90c0797d9f26baef7794b972c7"
+      sha256 "285f74a9743eebfda09fcf6d956d4cce9b4a0520744f950331e0091017bc3b88"
       def install
         bin.install "vsg"
       end
