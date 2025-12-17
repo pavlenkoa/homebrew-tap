@@ -5,21 +5,21 @@
 class Vsg < Formula
   desc "Vault Secrets Generator - CLI tool for managing secrets in HashiCorp Vault"
   homepage "https://github.com/pavlenkoa/vault-secrets-generator"
-  version "1.0.3"
+  version "2.0.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v1.0.3/vsg_1.0.3_darwin_amd64.tar.gz"
-      sha256 "51cfe481adf432e3490aaf08c0147618a0a1adc9ec925bda345cad929644f134"
+      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_darwin_amd64.tar.gz"
+      sha256 "f7a4ff4605ee787a76ac31801256cfccdf0d6b4471b168539b34413bb7cea42f"
 
       def install
         bin.install "vsg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v1.0.3/vsg_1.0.3_darwin_arm64.tar.gz"
-      sha256 "074d5877fd4e642838dacd384d07cb03306f70f732b4a73a158c7bd85db2dda8"
+      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_darwin_arm64.tar.gz"
+      sha256 "491a5654f636f49e7c7a31c4bcb2c6f270fbbfa41c63973639b500c36b255d01"
 
       def install
         bin.install "vsg"
@@ -29,15 +29,15 @@ class Vsg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v1.0.3/vsg_1.0.3_linux_amd64.tar.gz"
-      sha256 "45199253080b9ab2e4d3b1557a0d54ef7c5291eb8e2a78b3e7c02410278f594e"
+      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_linux_amd64.tar.gz"
+      sha256 "b2977855347912ed7f01e8443bf1c01c2dc6d40135cb590dd92a605c2434d3dc"
       def install
         bin.install "vsg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v1.0.3/vsg_1.0.3_linux_arm64.tar.gz"
-      sha256 "01d7fe6a3dcd0b64cc1a344978a316955d2ada9b80ff61872a6dff6f58074d65"
+      url "https://github.com/pavlenkoa/vault-secrets-generator/releases/download/v2.0.0/vsg_2.0.0_linux_arm64.tar.gz"
+      sha256 "98a9a1167a83474ccd3bea26e958eaa2a3129c90c0797d9f26baef7794b972c7"
       def install
         bin.install "vsg"
       end
